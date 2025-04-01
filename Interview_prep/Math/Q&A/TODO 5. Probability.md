@@ -1,1 +1,1 @@
-![Pasted image 20250314143659.png](../../../../attachments/d8a731a3137087d060ebbe70c3b50353.png)
+![Pasted image 20250314143659.png](ml_interview_prep_notes/Interview_prep/Math/Q&A/attachments/d8a731a3137087d060ebbe70c3b50353.png)

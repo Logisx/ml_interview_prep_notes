@@ -18,19 +18,14 @@ You basically do a vocab of words and in a one hot vector of the word the 1 is i
 - Keep adjusting the word vectors to maximize this probability
 - Learning: Update vectors so they can predict actual surrounding words better
 
-![Pasted image 20250317183006.png](../../../attachments/Pasted%20image%2020250317183006.png)
-We do gradient descent on a loss function to optimize the parameters of word vectors.
+![Pasted image 20250317183006.png](ml_interview_prep_notes/Interview_prep/DL/attachments/Pasted%20image%2020250317183006.png)adient descent on a loss function to optimize the parameters of word vectors.
 There are 2 vectors for each word:
 - vector if the word is the center word
 - vector if the word is in the context window
 
 More math:https://github.com/jaaack-wang/Notes-for-Stanford-CS224N-NLP-with-Deep-Learning/blob/main/lecture1-Intro%20and%20Word%20Vectors/%20%5BJack's%20Notes%5D%201-Intro%20and%20Word%20Vectors.ipynb
 
-The size of vectors is defined impirically (100/300 dimensions for ex.)
-
-![Pasted image 20250317184010.png](../../../attachments/Pasted%20image%2020250317184010.png)
-
-**Word2Vec** (by Google) is **predictive**: It learns embeddings by training a shallow neural network to predict the context of words. It comes in two variants:
+The size of vectors is defined impirically (100/300 dimens![Pasted image 202503171![Pasted image 20250317184010.png](../../../DL/attachments/Pasted%20image%2020250317184010.png)Vec** (by Google) is **predictive**: It learns embeddings by training a shallow neural network to predict the context of words. It comes in two variants:
 
 - **CBOW (Continuous Bag of Words):** Predicts a word from its surrounding words.
 - **Skip-gram:** Predicts surrounding words given a target word.

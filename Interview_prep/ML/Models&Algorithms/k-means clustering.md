@@ -1,11 +1,7 @@
 Pick k cluster centroids with random coordinates
 Calculate which points are closer to which centroid
 Move centroid to the mean coordinate of the points
-![500](../../../../attachments/Pasted%20image%2020250313113132.png)
-![500](../../../../attachments/Pasted%20image%2020250313113231.png)![500](../../../../attachments/Pasted%20image%2020250313113246.png)
-![500](../../../../attachments/Pasted%20image%2020250313113302.png)
-
-k-means clustering aims to partition observations into k clusters in which each observation belongs to the cluster with the nearest mean. k-means minimizes within-cluster variances (squared Euclidean distances), but not regular Euclidean distances.
+![500](ml_interview_prep_notes/Interview_prep/ML/Models&Algorithms/attachments/Pasted%20image%2020250313113132.png)p![500](../../../../Models&Algorithms/attachments/Pasted%20image%2020250313113231.png)![500](ml_interview_prep_notes/Interview_prep/ML/Models&Algorithms/attachments/Pasted%20image%2020250313113246.png)p![500](../../../../Models&Algorithms/attachments/Pasted%20image%2020250313113302.png)ustering aims to partition observations into k clusters in which each observation belongs to the cluster with the nearest mean. k-means minimizes within-cluster variances (squared Euclidean distances), but not regular Euclidean distances.
 
 The algorithm doesn’t guarantee convergence to the global optimum. The result may depend on the initial clusters. As the algorithm is usually fast, it is common to run it multiple times with different starting conditions.
 

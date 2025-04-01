@@ -45,9 +45,4 @@ class NearestNeighbor(object):
 Basic concept: we find top k closest images and have them vote on the label of the test image.
 k =1 -> simple Nearest Neighbor classifier
 As k grows, the classifier is more resistant to outliers.
-![Pasted image 20250228154750.png](../../../../attachments/Pasted%20image%2020250228154750.png)
-
-
-![Pasted image 20250228161155.png](../../../../attachments/Pasted%20image%2020250228161155.png)
-
-
+![Pasted image 20250228154750.png](ml_interview_prep_notes/Interview_prep/ML/Models&Algorithms/attachments/Pasted%20image%2020250228154750.png)281![Pasted image 20250228161155.png](../../../../Models&Algorithms/attachments/Pasted%20image%2020250228161155.png)

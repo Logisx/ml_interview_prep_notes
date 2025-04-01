@@ -11,6 +11,4 @@
 
 
 
-![Pasted image 20250228170355.png](../../../../attachments/Pasted%20image%2020250228170355.png)
-
-**hinge loss** - max(0,−)
+![Pasted image 20250228170355.png](ml_interview_prep_notes/Interview_prep/ML/Models&Algorithms/attachments/Pasted%20image%2020250228170355.png)ss** - max(0,−)
