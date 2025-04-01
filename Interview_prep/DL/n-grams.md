@@ -1,5 +1,5 @@
 https://web.stanford.edu/class/cs224n/slides_w25/cs224n-2025-lecture05-rnnlm.pdf
 
 The main idea is to pick n words standing together and look for what statistically is the next word. If you have low n (like 3) it doesn't have enough context. If you have larger n (like 7) it's much more possible that this combination of words never occured.
-![Pasted image 20250325152113.png](68293b5f440411a7c6f43d5bc3f7f89b.png)
-![Pasted image 20250325152142.png](3688c863aaf493e60181b77b6c0c6524.png)![Pasted image 20250325152158.png](22eecff4f82e464afb6ad5722ae23d2c.png)![Pasted image 20250325152209.png](9300c2d59796d1ef7c0394b9da79ce54.png)![Pasted image 20250325152324.png](b383fedebef17d22795839cd5155d0ee.png)![Pasted image 20250325152330.png](2cd8a8a4e5a372a6496649167ad87475.png)
+![Pasted image 20250325152113.png](../../../attachments/68293b5f440411a7c6f43d5bc3f7f89b.png)
+![Pasted image 20250325152142.png](../../../attachments/3688c863aaf493e60181b77b6c0c6524.png)![Pasted image 20250325152158.png](../../../attachments/22eecff4f82e464afb6ad5722ae23d2c.png)![Pasted image 20250325152209.png](../../../attachments/9300c2d59796d1ef7c0394b9da79ce54.png)![Pasted image 20250325152324.png](../../../attachments/b383fedebef17d22795839cd5155d0ee.png)![Pasted image 20250325152330.png](../../../attachments/2cd8a8a4e5a372a6496649167ad87475.png)

@@ -1,32 +1,32 @@
 
-![Pasted image 20250306110017.png](Pasted%20image%2020250306110017.png)
+![Pasted image 20250306110017.png](../../../../attachments/Pasted%20image%2020250306110017.png)
 C:
-![Pasted image 20250306110640.png](Pasted%20image%2020250306110640.png)
+![Pasted image 20250306110640.png](../../../../attachments/Pasted%20image%2020250306110640.png)
 
 ---
 
-![Pasted image 20250306111836.png](Pasted%20image%2020250306111836.png)
-C: ![Pasted image 20250306111853.png](Pasted%20image%2020250306111853.png)
-![Pasted image 20250306111906.png](Pasted%20image%2020250306111906.png)
+![Pasted image 20250306111836.png](../../../../attachments/Pasted%20image%2020250306111836.png)
+C: ![Pasted image 20250306111853.png](../../../../attachments/Pasted%20image%2020250306111853.png)
+![Pasted image 20250306111906.png](../../../../attachments/Pasted%20image%2020250306111906.png)
 
 ---
 
-![Pasted image 20250306112149.png](Pasted%20image%2020250306112149.png)A:
+![Pasted image 20250306112149.png](../../../../attachments/Pasted%20image%2020250306112149.png)A:
 In ML, we use this principle to select between two different models. Given two models with the same generalization error, the simpler one should be preferred because simplicity is desirable. Given two models with the same training-set error, the simpler one should be preferred because it is likely to have a lower generalization error.
 
-C:![Pasted image 20250306112432.png](Pasted%20image%2020250306112432.png)
-![Pasted image 20250306112445.png](Pasted%20image%2020250306112445.png)
+C:![Pasted image 20250306112432.png](../../../../attachments/Pasted%20image%2020250306112432.png)
+![Pasted image 20250306112445.png](../../../../attachments/Pasted%20image%2020250306112445.png)
 
 ---
 
-![Pasted image 20250306112506.png](Pasted%20image%2020250306112506.png)
+![Pasted image 20250306112506.png](../../../../attachments/Pasted%20image%2020250306112506.png)
 - Increased availability of Big Data because of raise of the internet and web.
 - Improved hardware (GPU, TPU)
 - Research found better architectures/algorithms (CNNs, Transformers, etc.)
 
 ---
 
-![Pasted image 20250306113308.png](Pasted%20image%2020250306113308.png)
+![Pasted image 20250306113308.png](../../../../attachments/Pasted%20image%2020250306113308.png)
 A: 
 **Deep networks** can learn hierarchical representations. Lower layers capture simple patterns (e.g., edges), while deeper layers combine them into more complex structures (e.g., shapes, objects). This enables more efficient representation learning.
 In a deep network, neurons in early layers can be reused multiple times by later layers, enabling parameter sharing and more efficient function approximation.
@@ -34,7 +34,7 @@ In a deep network, neurons in early layers can be reused multiple times by later
 
 ---
 
-![Pasted image 20250306141547.png](Pasted%20image%2020250306141547.png)
+![Pasted image 20250306141547.png](../../../../attachments/Pasted%20image%2020250306141547.png)
 A: The Universal Approximation Theorem states that a neural network with a single hidden layer can approximate any continuous function for inputs within a specific range. While the theorem guarantees that the network can approximate any function, it does not provide specific guidance on the number of neurons or the complexity required to achieve a certain level of accuracy. A low error can be achieved by an exponentially large number of neurons but such a wide model is prone to overfitting and difficult to train.
 
 Resources for deep understanding:
@@ -42,7 +42,7 @@ http://neuralnetworksanddeeplearning.com/chap4.html
 https://medium.com/towards-data-science/can-neural-networks-really-learn-any-function-65e106617fc6
 ---
 
-![Pasted image 20250306142159.png](Pasted%20image%2020250306142159.png)
+![Pasted image 20250306142159.png](../../../../attachments/Pasted%20image%2020250306142159.png)
 A **saddle point** is a point in the loss landscape where the gradient is **zero**, but it is neither a local minimum nor a local maximum. Instead, it has at least one direction where the loss decreases and another where it increases.
 Local minima are points in the function where it reaches the **minimum** value in its neighbourhood. **It may or may not be the minimum** for the whole function.
 
@@ -57,7 +57,7 @@ In practice, networks trained by Stochastic Gradient Descent almost always escap
 
 ---
 
-![Pasted image 20250306143844.png](Pasted%20image%2020250306143844.png)
+![Pasted image 20250306143844.png](../../../../attachments/Pasted%20image%2020250306143844.png)
 
 Parameters are quantities that are optimized by the model during the training process (e.g. weights of a neural network). Hyperparameters are quantities related to the learning procedure, which are not optimized during training, but are set by the user before the training starts (e.g. learning rate of the optimizer).
 
@@ -84,7 +84,7 @@ One major drawback of these two approaches is that they are uninformative – th
 
 ---
 
-![Pasted image 20250306144928.png](Pasted%20image%2020250306144928.png)
+![Pasted image 20250306144928.png](../../../../attachments/Pasted%20image%2020250306144928.png)
 In classification, the output is a discrete category label, but in regression, it is a continuous value.
 Ans. It is technically possible to convert a regression problem into classification by defining a threshold. For example, if I have a dataset of images with labels of their cloudiness level from 0 to 5 I could define a threshold, i.e. 2.5 and use it to turn the continuous values into discrete one, and use those discrete values as classes (cloudiness level < 2.5 equal image without clouds) but the opposite is definitely not possible.
 
@@ -106,7 +106,7 @@ However, there are multiple reasons to avoid it, like:
 
 ---
 
-![Pasted image 20250306183706.png](Pasted%20image%2020250306183706.png)
+![Pasted image 20250306183706.png](../../../../attachments/Pasted%20image%2020250306183706.png)
 Parametric model is a method with a fixed size of parameters while a non-parametric model can have potentially infinite size of parameters. In non-parametric methods, the complexity of the model grows with the number of training data samples. For example, linear regression, logistic regression and linear Support-vector machines are parametric models having a fixed size of parameters (weight coefficient). But the KNN, decision trees, or SVM with RBF kernel SVMS are non-parametric as the number of parameters increases with the training data size.
 
 - Use **parametric methods** when you have **limited data** and a **known underlying structure** (e.g., predicting house prices with linear regression).
@@ -115,12 +115,12 @@ Parametric model is a method with a fixed size of parameters while a non-paramet
 
 ---
 
-![Pasted image 20250307132906.png](Pasted%20image%2020250307132906.png)Different models make **different types of errors**. Even if it happens that all models have highly correlated errors it will mean that the result with ensembling won't be worse than without. But more commonly errors are uncorrelated, so combining multiple models cancels them out.
-![Pasted image 20250307133234.png](Pasted%20image%2020250307133234.png)
+![Pasted image 20250307132906.png](../../../../attachments/Pasted%20image%2020250307132906.png)Different models make **different types of errors**. Even if it happens that all models have highly correlated errors it will mean that the result with ensembling won't be worse than without. But more commonly errors are uncorrelated, so combining multiple models cancels them out.
+![Pasted image 20250307133234.png](../../../../attachments/Pasted%20image%2020250307133234.png)
 
 ---
 
-![Pasted image 20250307133307.png](Pasted%20image%2020250307133307.png)
+![Pasted image 20250307133307.png](../../../../attachments/Pasted%20image%2020250307133307.png)
 L1 is penalty proportional to the absolute value. The absolute value function encourages some weights to become exactly **zero**. So it selectively removes less important features, making the model **sparse**. While L2 reduces weight magnitudes but keeps all features, preventing overfitting without enforcing sparsity.
 
 Let w = 0.001. Then, L1(w) = |0.001| = 0.001, but L2(w) = (0.001)2 = 0.000001. We see that for the same value of w, the L2 term is much lower than the L1 term. As a consequence, in order to minimize the L1 regularization loss, the optimizer is forced to push w even closer to 0.
@@ -129,18 +129,18 @@ This is why L1 regularization is useful for **feature selection**, while L2 regu
 
 ---
 
-![Pasted image 20250307135153.png](Pasted%20image%2020250307135153.png)
-![Pasted image 20250307135140.png](Pasted%20image%2020250307135140.png)![Pasted image 20250307135219.png](Pasted%20image%2020250307135219.png)
+![Pasted image 20250307135153.png](../../../../attachments/Pasted%20image%2020250307135153.png)
+![Pasted image 20250307135140.png](../../../../attachments/Pasted%20image%2020250307135140.png)![Pasted image 20250307135219.png](../../../../attachments/Pasted%20image%2020250307135219.png)
 
 ---
 
-![Pasted image 20250307135235.png](Pasted%20image%2020250307135235.png)
-![Pasted image 20250307142830.png](Pasted%20image%2020250307142830.png)
+![Pasted image 20250307135235.png](../../../../attachments/Pasted%20image%2020250307135235.png)
+![Pasted image 20250307142830.png](../../../../attachments/Pasted%20image%2020250307142830.png)
 
 ---
 
 🚩🚩🚩🚩🚩🚩🚩🚩
-![Pasted image 20250307143355.png](Pasted%20image%2020250307143355.png)
+![Pasted image 20250307143355.png](../../../../attachments/Pasted%20image%2020250307143355.png)
 
 ---
 

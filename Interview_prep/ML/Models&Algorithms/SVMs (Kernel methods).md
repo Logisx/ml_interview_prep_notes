@@ -11,6 +11,6 @@
 
 
 
-![Pasted image 20250228170355.png](attachments/Pasted%20image%2020250228170355.png)
+![Pasted image 20250228170355.png](../../../../attachments/Pasted%20image%2020250228170355.png)
 
 **hinge loss** - max(0,−)

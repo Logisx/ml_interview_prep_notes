@@ -5,9 +5,9 @@ PCA and whitening
 Row vector vs column vector
 vanishing gradient issue
 Bayesian Optimization for hyperparameter tuning
-![Pasted image 20250307143443.png](Pasted%20image%2020250307143443.png)
+![Pasted image 20250307143443.png](../../attachments/Pasted%20image%2020250307143443.png)
 Covariance vs correlation vs causation
-![Pasted image 20250307145103.png](Pasted%20image%2020250307145103%201.png)
+![Pasted image 20250307145103.png](../../attachments/Pasted%20image%2020250307145103%201.png)
 
 
 Class imbalance
