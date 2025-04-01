@@ -1,0 +1,3 @@
+https://web.stanford.edu/class/cs224n/slides_w25/cs224n-2025-lecture06-fancy-rnn.pdf
+
+![[Pasted image 20250325155254.png]]![[Pasted image 20250325155258.png]]![[Pasted image 20250325155303.png]]![[Pasted image 20250325155311.png]]![[Pasted image 20250325155319.png]]![[Pasted image 20250325155328.png]]![[Pasted image 20250325155336.png]]![[Pasted image 20250325155346.png]]![[Pasted image 20250325155407.png]]![[Pasted image 20250325155413.png]]![[Pasted image 20250325155424.png]]![[Pasted image 20250325155435.png]]![[Pasted image 20250325155447.png]]![[Pasted image 20250325155454.png]]![[Pasted image 20250325155503.png]]
