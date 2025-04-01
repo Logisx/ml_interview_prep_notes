@@ -1,1 +1,1 @@
-![Pasted image 20250313133610.png](ml_interview_prep_notes/Interview_prep/DL/Q&A/attachments/Pasted%20image%2020250313133610.png)
+![Pasted image 20250313133610.png](attachments/Pasted%20image%2020250313133610.png)
