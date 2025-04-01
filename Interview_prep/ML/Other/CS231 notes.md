@@ -46,7 +46,14 @@ L2 prefers many medium disagreements to a big one (outlier)
 Basic concept: we find top k closest images and have them vote on the label of the test image.
 k =1 -> simple Nearest Neighbor classifier
 As k grows, the classifier is more resistant to outliers.
-![Pasted image 20250228154750 1.png](attachments/Pasted%20image%2020250228154750%201.png)281![Pasted image 20250228161155.png](attachments/Pasted%20image%2020250228161155%201.png)plitting
+![Pasted image 20250228154750 1.png](../../../attachments/Pasted%20image%2020250228154750%201.png)
+
+
+![Pasted image 20250228161155.png](../../../attachments/Pasted%20image%2020250228161155%201.png)
+
+
+
+# Data splitting
 
 ### Train Val Test
 Train - train models
@@ -64,7 +71,17 @@ In practice, cross-validation is not often used as it is computationally expensi
 
 
 # Linear Classifier
-y = Wx+b means that for classification we draw kinda lines and rotates them with W and move them around with b to separate the ![Pasted image 202502282![Pasted image 20250228203831.png](attachments/Pasted%20image%2020250228203831%201.png)81![Pasted image 20250228165100.png](attachments/Pasted%20image%2020250228165100%201.png)ansform y=Wx+b to y=Wx ![Pasted image 202502281![Pasted image 20250228165215 1.png](attachments/Pasted%20image%2020250228165215%201.png)nction
+y = Wx+b means that for classification we draw kinda lines and rotates them with W and move them around with b to separate the categories.
+![Pasted image 20250228203831 1.png](../../../attachments/Pasted%20image%2020250228203831%201.png)
+
+![Pasted image 20250228165100.png](../../../attachments/Pasted%20image%2020250228165100%201.png)
+
+
+We can transform y=Wx+b to y=Wx if do this:
+![Pasted image 20250228165215 1.png](../../../attachments/Pasted%20image%2020250228165215%201.png)
+
+
+# Loss function
 We measure how unhappy we are with how the current prediction turned out.
 Loss has no kinda unit, different losses are not comparable. Like softmax loss of 2 and svm loss of 1.06 doesnt' mean svm is better.
 # SVM - hinge loss (also called max-margin loss)
@@ -74,17 +91,36 @@ Loss has no kinda unit, different losses are not comparable. Like softmax loss o
 
 
 
-???????????????????????????????????? Read more o![Pasted image 202502281![Pasted image 20250228170355.png](attachments/Pasted%20image%2020250228170355%201.png)ss** - max(0,−)
+???????????????????????????????????? Read more on SVMs
+
+
+
+
+
+![Pasted image 20250228170355.png](../../../attachments/Pasted%20image%2020250228170355%201.png)
+
+**hinge loss** - max(0,−)
 
 
 # Regularization
-We add sum of weights in the matrix (or squared for L2) and add it to loss function to prevent overfitting. This sum is multiplied by coef that is ![Pasted image 202502282![Pasted image 20250228204207.png](attachments/Pasted%20image%2020250228204207%201.png)x - cross-entropy loss
+We add sum of weights in the matrix (or squared for L2) and add it to loss function to prevent overfitting. This sum is multiplied by coef that is hyperparam.
+![Pasted image 20250228204207 1.png](../../../attachments/Pasted%20image%2020250228204207%201.png)
 
-Classification function that returns a vector of probabilities for each class to be the ![Pasted image 202502282![Pasted image 20250228205153.png](attachments/Pasted%20image%2020250228205153.png)VM comparison
+
+
+# Softmax - cross-entropy loss
+
+Classification function that returns a vector of probabilities for each class to be the right one.
+
+![Pasted image 20250228205153.png](../../../attachments/Pasted%20image%2020250228205153.png)Softmax to SVM comparison
 
 # Optimizing Loss
 Optimization loss analogy is a blindfolded hiker. You want to reach the bottom of the hills. You can either try random directions around you and if it goes down - you step, if not - you stay. Or, more optimally you feel the slope with your feet (with gradient) and step where you feel the slope goes down. The learning rate represents the distance of your step, so you don't overstep the bottomest point.
 
 # Data Preprocessing
 Mean substraction - centers around (0,0)
-Normalization - scales to -1, 1 by dividing by s![Pasted image 202503031![Pasted image 20250303182337.png](attachments/Pasted%20image%2020250303182337%201.png)![Pasted image 202503031![Pasted image 20250303182517.png](attachments/Pasted%20image%2020250303182517%201.png)
+Normalization - scales to -1, 1 by dividing by standard dev
+![Pasted image 20250303182337 1.png](../../../attachments/Pasted%20image%2020250303182337%201.png)
+
+### PCA and whitening
+![Pasted image 20250303182517.png](../../../attachments/Pasted%20image%2020250303182517%201.png)

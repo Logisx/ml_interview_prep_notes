@@ -1,1 +1,1 @@
-![Pasted image 20250314143659.png](attachments/d8a731a3137087d060ebbe70c3b50353.png)
+![Pasted image 20250314143659.png](../../../attachments/Pasted%20image%2020250314143659.png)
