@@ -10,7 +10,7 @@ Each word embedding has some meaning coded in the value in each position. Words 
 ![Pasted image 20250324180051.png](../../../attachments/Pasted%20image%2020250324180051.png)
 
 We get a new vector for a word input, that now contains info about the word relation to each other word.
-![Pasted image 20250324180438.png](350706912c2d1f2f9c788300984b177d.png)
+![Pasted image 20250324180438.png](attachments/350706912c2d1f2f9c788300984b177d.png)
 
 
 ## Adding weights (Queries, Keys and Values)
