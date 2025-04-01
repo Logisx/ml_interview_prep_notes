@@ -18,7 +18,7 @@ You basically do a vocab of words and in a one hot vector of the word the 1 is i
 - Keep adjusting the word vectors to maximize this probability
 - Learning: Update vectors so they can predict actual surrounding words better
 
-![[Pasted image 20250317183006.png]]
+![Pasted image 20250317183006.png](Pasted%20image%2020250317183006.png)
 We do gradient descent on a loss function to optimize the parameters of word vectors.
 There are 2 vectors for each word:
 - vector if the word is the center word
@@ -28,7 +28,7 @@ More math:https://github.com/jaaack-wang/Notes-for-Stanford-CS224N-NLP-with-Deep
 
 The size of vectors is defined impirically (100/300 dimensions for ex.)
 
-![[Pasted image 20250317184010.png]]
+![Pasted image 20250317184010.png](Pasted%20image%2020250317184010.png)
 
 **Word2Vec** (by Google) is **predictive**: It learns embeddings by training a shallow neural network to predict the context of words. It comes in two variants:
 

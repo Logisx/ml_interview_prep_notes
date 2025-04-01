@@ -27,13 +27,13 @@ Was found that very large LMs can adapt to task if you provide examples of what 
 
 Scaling up models was giving better and better perplexity. The cost of training scales as parameters * training-tokens. A model with 2 times less params but 5 times more data outperformed.
 
-![[Pasted image 20250331130339.png]]![[Pasted image 20250331130356.png]]![[Pasted image 20250331130429.png]]![[Pasted image 20250331130436.png]]![[Pasted image 20250331130456.png]]
+![Pasted image 20250331130339.png](9ad6ef15ee03c9d91f26ebdeebdd92fe.png)![Pasted image 20250331130356.png](99741c6e5b1ba5d92347e394cc1839fa.png)![Pasted image 20250331130429.png](6f28931a9745cfc8edb42db8cafef057.png)![Pasted image 20250331130436.png](4932592e52ac3ef82beb0dcf6984072d.png)![Pasted image 20250331130456.png](a1aa480b65b331339e92efe60aa00113.png)
 
 Language modelling training task is used instead of dataset of Q&A as for LangMod the whole internet of texts can be used providing much more data.
 
-![[Pasted image 20250331130630.png]]![[Pasted image 20250331130647.png]]![[Pasted image 20250331130656.png]]![[Pasted image 20250331130704.png]]![[Pasted image 20250331130733.png]]![[Pasted image 20250331130740.png]]
+![Pasted image 20250331130630.png](7b0eba98b5259fcec7049d14f8b6f991.png)![Pasted image 20250331130647.png](411421fc0b4fb0fc18933bddeaa79de9.png)![Pasted image 20250331130656.png](03dff0243e3968a4d2982c59f1a20072.png)![Pasted image 20250331130704.png](d3aefe9b18744f315c5473fbc37fbf57.png)![Pasted image 20250331130733.png](5c4bb0d8fabcbd9390cea0cbaaa9849e.png)![Pasted image 20250331130740.png](ebf9aaf19de7de0da32b809b5adb0a46.png)
 
 
 
-![[Pasted image 20250331130812.png]]
-![[Pasted image 20250331130830.png]]![[Pasted image 20250331130856.png]]![[Pasted image 20250331130902.png]]![[Pasted image 20250331130922.png]]![[Pasted image 20250331130947.png]]![[Pasted image 20250331131001.png]]![[Pasted image 20250331131007.png]]![[Pasted image 20250331131021.png]]![[Pasted image 20250331131050.png]]
+![Pasted image 20250331130812.png](348f411e613ba5c0741221ca03ed0628.png)
+![Pasted image 20250331130830.png](fb4a937607b8ccbcf1a435f99587f463.png)![Pasted image 20250331130856.png](ec5c0fd63c8c9a8cb3b70c4fbe8b7e8d.png)![Pasted image 20250331130902.png](076de8be582b8193590a952ad1dc8e76.png)![Pasted image 20250331130922.png](aa64cfa2441cef34f6ef9d2a4280cc0f.png)![Pasted image 20250331130947.png](e346b6a5acbf7d16d26999bcb8944322.png)![Pasted image 20250331131001.png](d46fd646e575cbca2a1a807f8ef0cd34.png)![Pasted image 20250331131007.png](e517a94a2fc22a2718ec5eb2afb68000.png)![Pasted image 20250331131021.png](7e36b1e917209008d9748e7fc42310e7.png)![Pasted image 20250331131050.png](2adf4923de9c79047a1831ba27bdab10.png)
