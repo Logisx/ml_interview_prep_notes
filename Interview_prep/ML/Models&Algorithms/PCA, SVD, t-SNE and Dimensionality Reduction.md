@@ -117,6 +117,7 @@ Imagine Netflix has a huge **user-movie rating matrix** with thousands of users 
 # t-SNE
 t-SNE takes high-dimensional dataset and reduces/plots it as a low-dimensional graph, keeping a lot of information.
 ![Pasted image 20250308153328.png](../../../attachments/Pasted%20image%2020250308153328.png)
+
 t-SNE (T-distributed Stochastic Neighbor Embedding) is a technique used to reduce high-dimensional data to two or three dimensions for visualization. It works by first calculating pairwise similarities between data points in high dimensions and then mapping them to a lower-dimensional space, preserving these similarities. 
 
 We need t-SNE primarily for **data visualization**, helping to reveal patterns or clusters in complex, high-dimensional data, making it easier to understand and interpret. However, it’s mainly used for visualization and may not preserve global structures well.
