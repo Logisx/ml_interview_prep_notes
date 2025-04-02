@@ -105,3 +105,87 @@ In this case, the Levenshtein distance between “doctor” and “bottle” is 
 4. Change r into e
 
 ---
+![](../../../attachments/Pasted%20image%2020250402132426.png)
+https://youtu.be/M05L1DhFqcw?si=Yc85Bp2IqQDIG4WL
+”the closer a machine translation is to a professional human translation, the better it is” – this is the central idea behind BLEU
+The advantages of BLEU are: • Fast and simple to compute. • Widely used in both industry and academia. In contrast, its disadvantages are: • Doesn’t consider meaning. • Doesn’t incorporate sentence structure. • Struggles with non-English languages. • Hard to compare scores with different tokenizers.
+
+---
+
+![](../../../attachments/Pasted%20image%2020250402132940.png)
+### **Understanding Entropy in Language Models**
+
+Entropy measures the uncertainty of a model’s predictions. Lower entropy indicates a more confident and likely better model.
+
+- **Character-Level Entropy (2)**: Measures uncertainty at the character level. A lower value suggests the model is confident in predicting the next character.
+    
+- **Word-Level Entropy (6)**: Measures uncertainty at the word level. A higher value suggests more uncertainty in predicting the next word.
+### **Comparing the Models**
+
+Since entropy is not directly comparable across different granularities (character vs. word), we should convert one to the other for a fair comparison. The approximate relationship is:
+
+Hword≈Hchar×avg word lengthH_{\text{word}} \approx H_{\text{char}} \times \text{avg word length}Hword​≈Hchar​×avg word length
+
+Assuming an **average word length of 4 characters**, the expected word-level entropy for Model A would be:
+
+Hword for Model A≈2×4=8H_{\text{word for Model A}} \approx 2 \times 4 = 8Hword for Model A​≈2×4=8
+
+Since **Model A's estimated word-level entropy (8) is higher than Model B's actual word-level entropy (6)**, Model B is likely the better model.
+
+### **Deployment Decision**
+
+I would choose **Model B (word-level entropy = 6)** for deployment because it exhibits lower overall uncertainty in predicting words, making it more reliable for practical use.
+
+https://www.reddit.com/r/MLQuestions/comments/s5yexj/on_the_same_test_set_lm_model_a_has_a/
+if this were model A with a word-level entropy that's lower than model B's word-level entropy, you could say model B has a higher degree of randomness. This isn't a good or bad thing on itself. Less randomness can mean less errors, but it can also mean something like mode collapse, where the model only produces a few "well-known" outputs, and ignores other possibilities for exploration/higher recall.
+
+Based just on an entropy score, without knowing the task at hand or any other performance metrics, you can't really answer this question IMO.
+
+---
+
+![](../../../attachments/Pasted%20image%2020250402133532.png)
+I would make **Corpus A case-sensitive** for Named Entity Recognition (NER) training.
+
+### **Reasons for Case Sensitivity in NER**
+
+1. **Proper Nouns Are Often Capitalized** – Many named entities (e.g., **"Apple"** the company vs. **"apple"** the fruit) rely on capitalization to convey meaning. Removing case information would make it harder for the model to differentiate them.
+    
+2. **Contextual Importance** – In many languages, capitalization provides cues about entity types (e.g., "Paris" as a location vs. "paris" if it were a lowercase common noun).
+    
+3. **Standard NER Models Use Case Information** – Pretrained NER models like spaCy, BERT-based NER, and CRF-based models leverage case distinctions to improve accuracy.
+    
+4. **Retaining More Information Is Better** – A case-sensitive corpus retains flexibility; you can always lowercase the text later if needed, but you **cannot recover lost case information** if you start with a case-insensitive dataset.
+    
+
+### **When Might Case-Insensitivity Be Useful?**
+
+- If working with **informal text (e.g., social media, chat logs, or noisy OCR)** where capitalization is inconsistent.
+    
+- If dealing with **languages/scripts that don’t use case distinctions** (e.g., Chinese, Arabic).
+### **Conclusion**
+
+For most NER tasks, **a case-sensitive corpus is the better choice**, as it preserves valuable information that helps disambiguate named entities.
+
+
+---
+
+![](../../../attachments/Pasted%20image%2020250402133700.png)Removing stop words can hurt sentiment analysis because some stop words carry important sentiment cues (e.g., _"not"_ in _"not good"_). They also help preserve context and word relationships, which models—especially deep learning ones—use to understand sentiment. Removing them can distort meaning, weaken sentiment intensity, and disrupt models like BERT that rely on full sentence structures. However, for simpler models like Naïve Bayes, removing stop words might help by reducing noise.
+
+### **When It Might Help:**
+
+- For **simple models (Naïve Bayes, SVMs)** that rely only on word counts, removing stop words can reduce noise.
+    
+- In **domain-specific tasks**, where stop words don’t add sentiment (e.g., financial reports).
+
+---
+
+![](../../../attachments/Pasted%20image%2020250402142920.png)
+Many models use relative position embeddings because they allow for better generalization to longer sequences and are independent of the fixed sequence length. Unlike absolute embeddings, which are limited to a predefined token range, relative embeddings focus on token distances, making them more flexible and capable of handling variable-length inputs.
+Absolute embedding may be useful when word position **strictly matters**, like in certain positional encodings for structured data (e.g., DNA sequences, music processing).
+
+---
+
+![](../../../attachments/Pasted%20image%2020250402143253.png)
+https://www.reddit.com/r/MachineLearning/comments/1d2iurw/d_should_the_embedding_matrix_and_final/
+https://www.reddit.com/r/MachineLearning/comments/1eqm0lr/r_why_and_when_tying_embedding_a_story/
+This was popular when models were at such a size that the embeddings were a significant portion (sometimes the majority) of the parameters. Tieing reduced the overall parameter count significantly. With larger models isn't necessary anymore.
