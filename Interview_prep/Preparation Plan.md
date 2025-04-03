@@ -38,7 +38,12 @@ Continue practicing with:
 - Karpathy Series on LLMs: [MakeMore](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
 
-
+Backpropagation:
+https://www.youtube.com/watch?v=i94OvYb6noo&ab_channel=AndrejKarpathy
+https://cs231n.github.io/
+https://www.youtube.com/watch?v=gYpoJMlgyXA&t=1254s&ab_channel=AndrejKarpathy
+https://www.youtube.com/watch?v=yCC09vCHzF8&ab_channel=AndrejKarpathy
+https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b
 
 Final practice and cheat sheets:
 - **Real Interview Experiences Repo**: [Data Scientist Roadmap 2024](https://github.com/xandie985/data-scientist-roadmap2024/tree/main?tab=readme-ov-file#interviews)

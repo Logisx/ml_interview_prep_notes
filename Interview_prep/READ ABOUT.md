@@ -3,10 +3,10 @@ Cross entropy
 PCA and whitening
 
 Row vector vs column vector
-vanishing gradient issue
+
 Bayesian Optimization for hyperparameter tuning
 ![Pasted image 20250307143443.png](../attachments/Pasted%20image%2020250307143443.png)
-Covariance vs correlation vs causation
+
 ![Pasted image 20250307145103.png](../attachments/Pasted%20image%2020250307145103%201.png)
 
 
@@ -34,13 +34,16 @@ https://cs231n.github.io/
 !!! https://www.youtube.com/watch?v=yCC09vCHzF8&ab_channel=AndrejKarpathy
 https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b
 
-
-stemming vs lemmization
-stop word removal
-
 perplexity
 
-tf-idf
+- Probabilistic concepts such as sampling, determinism, and distribution.
+    
+- ML concepts such as supervision, self-supervision, log-likelihood, gradient descent, backpropagation, loss function, and hyperparameter tuning.
+    
+
+- Various neural network architectures, including feedforward, recurrent, and transformer.
+    
+- Metrics such as accuracy, F1, precision, recall, cosine similarity, and cross entropy.
 ## Extra
 
 eigenvectors/values applications
